@@ -1,4 +1,5 @@
 Countdown Timer
+
 This is a customizable countdown timer built with React, utilizing client-side rendering. The timer allows users to set a duration, start, pause, and reset the countdown with ease. It also includes a sleek and modern design, featuring light and dark mode compatibility.
 
 Features
