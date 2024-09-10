@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "countdown-timer/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "outputDirectory": ".next",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "countdown-timer/$1"
+    }
+  ]
+}
