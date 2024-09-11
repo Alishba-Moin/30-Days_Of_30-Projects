@@ -58,21 +58,6 @@ When you’re ready to deploy, create a production build:
 npm run build
 
 
-📂 Project Structure
-
-Here’s a quick overview of the main files and directories:
-
-.
-├── components/
-│   └── weather-widget.tsx
-├── app/
-│   └── page.tsx
-│   └── globals.css
-├── public/
-│   └── (static assets)
-├── .env.local
-└── README.md
-
 🧩 How It Works
 
 - **State Management**: Uses React hooks for handling state (location, weather data, errors, and loading).
