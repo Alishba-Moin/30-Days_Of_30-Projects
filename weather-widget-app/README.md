@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌤️ Weather Widget App
 
-## Getting Started
+Welcome to the Weather Widget App! This is a sleek, easy-to-use application that lets you check the current weather by city. Built with Next.js, React, Tailwind CSS, and Shadcn UI components, it’s designed to be both functional and stylish.
 
-First, run the development server:
+ 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Search by City**: Enter any city to get current weather details.
+- **Real-time Data**: Fetches and displays live weather information.
+- **Responsive Design**: Looks great on all devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ 🔧 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: For building a high-performance React application.
+- **React**: For creating dynamic user interfaces.
+- **Tailwind CSS**: For modern, utility-first styling.
+- **Shadcn UI**: Pre-styled, reusable UI components.
+- **WeatherAPI**: Provides accurate weather data.
+- **Vercel**: For seamless deployment.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ 🛠️ Getting Started
 
-## Learn More
+Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 
+- npm or yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the Repository**:
 
-## Deploy on Vercel
+   git clone https://github.com/Alishba-Moin/30-Days_Of_30-Projects.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Navigate to the Project Directory**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   cd weather-widget-app
+
+3. **Install Dependencies**:
+
+   npm install
+
+
+4. **Add Your WeatherAPI Key**:
+
+   Get your API key from [WeatherAPI](https://www.weatherapi.com/) and add it to `.env.local`:
+
+   NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
+
+5. **Run the Development Server**:
+
+   npm run dev
+
+   Visit `http://localhost:3000` to see the app in action.
+
+Build for Production
+
+When you’re ready to deploy, create a production build:
+
+npm run build
+
+
+📂 Project Structure
+
+Here’s a quick overview of the main files and directories:
+
+.
+├── components/
+│   └── weather-widget.tsx
+├── app/
+│   └── page.tsx
+│   └── globals.css
+├── public/
+│   └── (static assets)
+├── .env.local
+└── README.md
+
+🧩 How It Works
+
+- **State Management**: Uses React hooks for handling state (location, weather data, errors, and loading).
+- **API Integration**: Fetches weather data from WeatherAPI and updates the UI based on the response.
+
+ 🌐 Deployment
+
+Deploy your app with [Vercel](https://vercel.com/). Connect your repository, and Vercel will handle the rest.
+
+ 📝 License
+
+MIT License. Feel free to use and modify!
