@@ -11,7 +11,7 @@ interface WeatherData {
     location: string;
     unit: string;
   }
-export default function weatherWidget(){
+export default function WeatherWidget(){
 const [location, setLocation] = useState<string>("");
 const [weather, setWeather] = useState<WeatherData | null>(null);
 const [error, setError] = useState<string | null>(null);
