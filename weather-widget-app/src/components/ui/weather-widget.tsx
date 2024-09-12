@@ -110,7 +110,11 @@ function getLocationMessage(location: string): string {
   {/* Main Weather Card */}
   <Card className="bg-gray-500 shadow-lg rounded-lg p-8 max-w-lg w-full">
     <CardHeader className="text-center">
+<<<<<<< HEAD
     <CardTitle className="text-3xl font-bold text-white font-serif mb-6">Weather Widget App</CardTitle>
+=======
+      <CardTitle className="text-3xl font-bold text-white font-serif mb-6">Weather Widget App</CardTitle>
+>>>>>>> 6815f5945ffc3ab3ca774d5ba916ac80931a1c24
       <CardDescription className="text-lg text-white font-serif">
         Enter a city below to find its current weather conditions.
       </CardDescription>
