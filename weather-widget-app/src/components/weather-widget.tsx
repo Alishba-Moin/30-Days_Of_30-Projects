@@ -115,7 +115,6 @@ function getLocationMessage(location: string): string {
       Enter a city below to find its current weather conditions.
     </CardDescription>
   </CardHeader>
-</Card>
     <CardContent>
       {/* Form */}
       <form onSubmit={handleSearch} className="flex space-x-2 mb-4">
