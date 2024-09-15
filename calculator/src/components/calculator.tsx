@@ -99,7 +99,9 @@ export default function Calculator() {
       if (e.key === "m") calculate("multiply");
       if (e.key === "d") calculate("divide");
       if (e.key === "c") clear();
-    };
+    }
+    window.addEventListener("keydown", handleKeyDown);
+     return () => window.removeEventListener("keydown", handleKeyDown);
    }, [num1, num2]);
 
   return (
