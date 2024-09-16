@@ -99,8 +99,11 @@ export default function Calculator() {
       if (e.key === "m") calculate("multiply");
       if (e.key === "d") calculate("divide");
       if (e.key === "c") clear();
-    };
+   }
+    window.addEventListener("keydown", handleKeyDown);
+     return () => window.removeEventListener("keydown", handleKeyDown);
    }, [num1, num2]);
+ 
 
   return (
     <div className={`flex flex-col items-center justify-center h-screen ${isDarkMode ? "bg-gray-900 text-gray-100" : "bg-gray-50 text-gray-900"}`}>
@@ -224,3 +227,4 @@ export default function Calculator() {
 </div>
   )
 }
+
