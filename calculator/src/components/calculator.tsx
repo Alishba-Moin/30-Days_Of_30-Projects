@@ -231,7 +231,3 @@ export default function Calculator() {
 </div>
   )
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 00e29549977d7195ed89427fb3bf21ad026dbe1f
