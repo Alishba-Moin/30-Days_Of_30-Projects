@@ -1,4 +1,4 @@
-# Random Jokes Application
+# Random Joke Generator
 
 ## Overview
 
