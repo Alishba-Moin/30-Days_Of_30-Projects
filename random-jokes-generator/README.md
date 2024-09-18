@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Random Joke Generator
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is a web application that fetches and displays random jokes based on user-selected categories. The application uses the Official Joke API to fetch jokes and includes the following features:
 
-```bash
+- *Category Selection*: Choose between "Programming" and "Dad Jokes."
+- *Joke Display*: View the joke setup and punchline.
+- *Favorites*: Add jokes to a favorites list.
+- *Rating System*: Rate jokes with a 1 to 5-star rating system.
+- *Speech*: Listen to the joke read aloud using the Web Speech API.
+
+## Features
+
+- Category Selection: A dropdown menu allows you to select joke categories.
+- Joke Display: Shows the joke setup and punchline.
+- Favorites: Toggle jokes in the favorites list.
+- Rating System: Rate jokes from 1 to 5 stars.
+- Speech: Button to listen to the joke read aloud.
+
+## Technologies Used
+
+- React: Front-end library for building the user interface.
+- TypeScript: Provides type safety and better development experience.
+- Tailwind CSS: For styling and layout.
+- Official Joke API: To fetch jokes based on the selected category.
+- Web Speech API: To read jokes aloud.
+
+## Installation
+
+1. Clone the repository:
+https://github.com/Alishba-Moin/30-Days_Of_30-Projects/edit/master/random-jokes-generator/
+
+2. Navigate to the project directory:
+cd <project-directory>
+
+3. Install dependencies:
+npm install
+
+4. Run the application:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open your browser and visit:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+USAGE:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Select a Joke Category:
+- Choose between "Programming" and "Dad Jokes" from the dropdown menu.
 
-## Learn More
+Fetch a Joke:
+- Click the "😂 Get New Joke 😂" button to fetch a random joke from the selected category.
+Add to Favorites:
+- Click the heart icon to add the current joke to your favorites list. The icon toggles between filled and empty heart based on the joke's favorite status.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Rate the Joke:
+- Rate the joke from 1 to 5 stars using the star icons.
+  
+Listen to the Joke:
+- Click the "🔊 Listen to Joke 🔊" button to hear the joke read aloud.
+View Favorites:
+-Favorite jokes are displayed below the joke card.
