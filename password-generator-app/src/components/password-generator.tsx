@@ -94,7 +94,7 @@ export default function PasswordGenerator() {
         </CardHeader>
 
         <CardContent>
-          <div className="mx-auto max-w-md space-y-6">
+          <div className="w-full mx-auto max-w-md space-y-6">
             {/* Password Display */}
             <div className="flex items-center space-x-2">
               <Input
@@ -106,29 +106,29 @@ export default function PasswordGenerator() {
               />
               <Button
                 onClick={() => setIsPasswordVisible(!isPasswordVisible)} // Toggle password visibility
-                className="p-2 bg-gray-200 hover:bg-gray-400 rounded-lg"
+                className="p-2 bg-black hover:bg-gray-900 "
               >
                 {isPasswordVisible ? (
-                  <EyeSlashIcon className="h-6 w-6" />
+                  <EyeSlashIcon className="h-6 w-6 text-cyan-500" />
                 ) : (
-                  <EyeIcon className="h-6 w-6" />
+                  <EyeIcon className="h-6 w-6 text-cyan-500 " />
                 )}
               </Button>
               <Button 
                 onClick={copyToClipboard} // Copy password to clipboard
-                className="p-2 bg-gray-200 hover:bg-gray-400 rounded-lg">
-                <ClipboardIcon className="h-6 w-6" />
+                className="p-2 bg-black hover:bg-gray-900 ">
+                <ClipboardIcon className="h-6 w-6 text-cyan-500" />
               </Button>
             </div>
 
             {/* Password Strength */}
             <div className="flex flex-col items-center">
               <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                Strength: <span className="font-bold">{checkPasswordStrength(password)}</span>
+               <span className="font-bold">{checkPasswordStrength(password)}</span>
               </div>
               <div className="w-full bg-gray-200 rounded h-2">
                 <div
-                  className={`h-full rounded ${
+                  className={`h-full rounded-xl ${
                     checkPasswordStrength(password) === "Weak"
                       ? "bg-red-500"
                       : checkPasswordStrength(password) === "Moderate"
@@ -162,50 +162,49 @@ export default function PasswordGenerator() {
             {/* Character Types Grid */}
             <div className="grid grid-cols-4 gap-4">
               <div className="flex items-center space-x-2 font-bold">
-                <input
-                  id="uppercase"
-                  type="checkbox"
-                  checked={includeUppercase}
-                  onChange={() => setIncludeUppercase(!includeUppercase)} // Toggle uppercase option
-                  className="w-6 h-6"
-                />
-                <label htmlFor="uppercase" className="text-yellow-500">ABC</label>
-              </div>
-
-              <div className="flex items-center space-x-2 font-bold">
-                <input
-                  id="lowercase"
-                  type="checkbox"
-                  checked={includeLowercase}
-                  onChange={() => setIncludeLowercase(!includeLowercase)} // Toggle lowercase option
-                  className="w-6 h-6"
-                />
-                <label htmlFor="lowercase" className="text-yellow-500">abc</label>
-              </div>
-
-              <div className="flex items-center space-x-2 font-bold">
-                <input
-                  id="numbers"
-                  type="checkbox"
-                  checked={includeNumbers}
-                  onChange={() => setIncludeNumbers(!includeNumbers)} // Toggle numbers option
-                  className="w-6 h-6"
-                />
-                <label htmlFor="numbers" className="text-yellow-500">123</label>
-              </div>
-
-              <div className="flex items-center space-x-2 font-bold">
-                <input
-                  id="symbols"
-                  type="checkbox"
-                  checked={includeSymbols}
-                  onChange={() => setIncludeSymbols(!includeSymbols)} // Toggle symbols option
-                  className="w-6 h-6"
-                />
-                <label htmlFor="symbols" className="text-yellow-500">&#$</label>
-              </div>
+             <Input
+              id="uppercase"
+              type="checkbox"
+              checked={includeUppercase}
+              onChange={() => setIncludeUppercase(!includeUppercase)} // Toggle uppercase option
+              className="w-6 h-6 border-yellow-500 text-yellow-500 focus:ring-yellow-500 focus:ring-2"
+              />
+            <Label htmlFor="uppercase" className="text-yellow-500">ABC</Label>
             </div>
 
+            <div className="flex items-center space-x-2 font-bold">
+            <Input
+             id="lowercase"
+             type="checkbox"
+             checked={includeLowercase}
+             onChange={() => setIncludeLowercase(!includeLowercase)} // Toggle lowercase option
+             className="w-6 h-6  border-yellow-500 text-yellow-500 focus:ring-yellow-500 focus:ring-2"
+            />
+             <Label htmlFor="lowercase" className="text-yellow-500"> abc</Label>
+          </div>
+
+           <div className="flex items-center space-x-2 font-bold">
+          <Input
+           id="numbers"
+           type="checkbox"
+           checked={includeNumbers}
+           onChange={() => setIncludeNumbers(!includeNumbers)} // Toggle numbers option
+           className="w-6 h-6  border-yellow-500 text-yellow-500 focus:ring-yellow-500 focus:ring-2"
+           />
+          <Label htmlFor="numbers" className="text-yellow-500"> 123</Label>
+        </div>
+
+           <div className="flex items-center space-x-2 font-bold">
+          <Input
+           id="symbols"
+           type="checkbox"
+           checked={includeSymbols}
+           onChange={() => setIncludeSymbols(!includeSymbols)} // Toggle symbols option
+           className="w-6 h-6 border-yellow-500 text-yellow-500 focus:ring-yellow-500 focus:ring-2"
+          />
+          <Label htmlFor="symbols" className="text-yellow-500"> &#$</Label>
+          </div>
+      </div>
             {/* Password History */}
             <div className="space-y-2">
               <Label className="text-xl font-bold text-white">Password History: </Label>
