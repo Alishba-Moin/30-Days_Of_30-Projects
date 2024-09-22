@@ -1,4 +1,4 @@
-"use client"; // Enables client-side rendering for this component
+"use client"; // Enables client-side rendering 
 
 import { useState, ChangeEvent, useEffect } from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
