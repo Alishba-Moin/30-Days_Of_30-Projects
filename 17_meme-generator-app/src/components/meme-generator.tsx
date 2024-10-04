@@ -128,8 +128,7 @@ export default function MemeGenerator() {
   const handleDownload = async (): Promise<void> => {
     if (memeRef.current) { 
       try {
-        const canvas = await html2canvas(memeRef.current, {
-          useCORS: true, 
+        const canvas = await html2canvas(memeRef.current, { 
         }); 
         const link = document.createElement("a"); 
         link.href = canvas.toDataURL("image/png");
