@@ -22,7 +22,7 @@ const defaultNotes: Note[] = [
     content: "Milk, Eggs, Bread, Apples",
     isFavorite: false,
     category: "Personal",
-    color: "#f5aa42", // Orange
+    color: "#fed7aa", // Orange
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const defaultNotes: Note[] = [
     content: "Discuss new project timeline, assign tasks to team",
     isFavorite: true,
     category: "Work",
-    color: "#42a5f5", // Blue
+    color: "#bfdbfe", // Blue
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const defaultNotes: Note[] = [
     content: "Develop a note-taking app with a clean and minimalist design",
     isFavorite: false,
     category: "Ideas",
-    color: "#66bb6a", // Green
+    color: "#c4b5fd", // Purple
   },
 ];
 
@@ -86,7 +86,7 @@ export default function NotesApp() {
     title: "",
     content: "",
     category: "",
-    color: "#f5aa42", // Default selected color
+    color: "#6ee7b7", // Default selected color
   });
   const [editNotesId, setEditNotesId] = useState<number | null>(null);
   const [isMounted, setIsMounted] = useState<boolean>(false);
